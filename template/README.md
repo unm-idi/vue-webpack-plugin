@@ -2,6 +2,8 @@
 
 > {{ description }}
 
+See a working [demo](https://unm-idi.gitlab.io/{{ name }}/).
+
 ## Build Setup
 
 ``` bash
@@ -14,8 +16,8 @@ npm run dev
 # build for production with minification
 npm run build
 
-# build for production and view the bundle analyzer report
-npm run build --report
+# build demo (used to prepare for gitlab pages)
+npm run build:demo
 {{#unit}}
 
 # run unit tests
@@ -32,5 +34,3 @@ npm run e2e
 npm test
 {{/if_or}}
 ```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
