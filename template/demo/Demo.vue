@@ -6,7 +6,7 @@
 </template>
 
 <script>
-  import { List } from '../index'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+  import { List } from '../src/index'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
   export default {
     data{{#if_eq lintConfig "standard"}} {{/if_eq}}() {

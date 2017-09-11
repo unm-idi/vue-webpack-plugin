@@ -6,7 +6,7 @@
 {{/if_eq}}
 
 import Vue from 'vue'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
-import Demo from './demo/Demo'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+import Demo from './Demo'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{#router}}
 import router from './router'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/router}}
