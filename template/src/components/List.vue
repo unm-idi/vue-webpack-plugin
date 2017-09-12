@@ -13,7 +13,9 @@
   import ListItem from './ListItem'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
   export default {
-    props: ['items', 'cool'],
+    name: 'list',
+
+    props: ['items', 'icons'],
 
     components: {
       ListItem{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
