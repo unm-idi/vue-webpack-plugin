@@ -2,8 +2,6 @@
 
 > {{ description }}
 
-See a working [demo](https://unm-idi.gitlab.io/{{ name }}/).
-
 ## Build Setup
 
 ``` bash
