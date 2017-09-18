@@ -1,7 +1,14 @@
 .list {
-  list-style-type: square;
-}
+  list-style-type: none;
+  .expandable-list-item {
+    position: relative;
+    cursor: pointer;
 
-.list-item {
-  font-style: italic;
+    i {
+      position: absolute;
+      font-size: 12px;
+      left: -15px;
+      top: 3px;
+    }
+  }
 }
