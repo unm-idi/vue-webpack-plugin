@@ -6,7 +6,7 @@
   "private": true,
   "module": "src/index.js",
   "jsnext:main": "src/index.js",
-  "main": "dist/{{ name }}.min.js"
+  "main": "dist/{{ name }}.min.js",
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",
