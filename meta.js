@@ -1,4 +1,5 @@
-const camelCase = require('camelcase');
+// import custom lodash export of camelCase string transformation
+const camelCase = require('./camelCase.js').camelCase;
 
 module.exports = {
   "helpers": {
