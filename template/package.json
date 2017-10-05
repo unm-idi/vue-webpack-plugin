@@ -4,8 +4,8 @@
   "description": "{{ description }}",
   "author": "{{ author }}",
   "private": true,
-  "module": "src/index.js",
   "jsnext:main": "src/index.js",
+  "module": "dist/{{ name }}.min.js",
   "main": "dist/{{ name }}.min.js",
   "scripts": {
     "dev": "node build/dev-server.js",
@@ -18,6 +18,8 @@
     "lint": "eslint --ext .js,.vue src{{#unit}} test/unit/specs{{/unit}}{{#e2e}} test/e2e/specs{{/e2e}}"{{/lint}}
   },
   "dependencies": {
+  },
+  "devDependencies": {
     "vue": "^2.4.2"{{#router}},
     "vue-router": "^2.7.0",{{/router}}
     "babel-core": "^6.22.1",
@@ -25,9 +27,7 @@
     "babel-plugin-transform-runtime": "^6.22.0",
     "babel-preset-env": "^1.3.2",
     "babel-preset-stage-2": "^6.22.0",
-    "babel-register": "^6.22.0"
-  },
-  "devDependencies": {
+    "babel-register": "^6.22.0",
     "autoprefixer": "^7.1.2",
     {{#lint}}
     "babel-eslint": "^7.1.1",
