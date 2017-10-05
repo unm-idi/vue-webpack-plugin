@@ -10,6 +10,9 @@ module.exports = merge(baseWebpackConfig, {
   },
   entry: './src/index.js',
   output: {
+    library: '{{ library }}',
+    libraryTarget: 'umd',
+    umdNamedDefine: true,
     filename: '../dist/{{ name }}.min.js'
   },
   plugins: [

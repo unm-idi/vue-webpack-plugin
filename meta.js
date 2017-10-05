@@ -1,3 +1,5 @@
+const camelCase = require('camelcase');
+
 module.exports = {
   "helpers": {
     "if_or": function (v1, v2, options) {
@@ -13,6 +15,14 @@ module.exports = {
       "type": "string",
       "required": true,
       "message": "Project name"
+    },
+    "library": {
+      "type": "string",
+      "required": true,
+      "default": function (options) {
+        return camelCase(options.name);
+      },
+      "message": "Library Name (this will be used as the umd library name)"
     },
     "description": {
       "type": "string",
@@ -86,7 +96,6 @@ module.exports = {
     "test/unit/**/*": "unit",
     "build/webpack.test.conf.js": "unit",
     "test/e2e/**/*": "e2e",
-    "src/router/**/*": "router"
   },
   "completeMessage": "To get started:\n\n  {{^inPlace}}cd {{destDirName}}\n  {{/inPlace}}npm install\n  npm run dev\n\nDocumentation can be found at https://vuejs-templates.github.io/webpack"
 };
